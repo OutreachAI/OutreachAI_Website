@@ -8,6 +8,12 @@ Welcome to the OutreachAI repository! OutreachAI is a cutting-edge AI platform t
 
 To install OutreachAI, simply clone this repository and run the following command:
 
+`pip install requirements.txt`
+
+or 
+
+`pip3 install requirements.txt`
+
 
 ## Features
 
