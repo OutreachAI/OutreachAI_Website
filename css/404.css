@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'roboto';
+    margin:0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-X: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
+}
+
+.center-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img{
+    max-width:20rem;
+}
+.text h2{
+    font-size: 20px;
+}
+
+.pink{
+    color:#cb3a79;
+}
+
+.text sl-icon{
+    font-size: 30px;
+    color: red;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding-bottom:2%;
+}
+
+.flex-container p{
+    font-size: 16px;
+    font-weight: 600;
+}

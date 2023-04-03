@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'roboto';
+    margin:0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+.header {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding:1% 2% 0 2%;
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .header-logo {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  .header .text {
+    text-align: right;
+  }
+
+  .Derby{
+    color:#cb3a79;
+  }
+
+  .statement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .statement-text{
+    width:50%;
+  }
+
+  .statement-text h5{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .statement-image{
+    width:50;
+  }
+
+  .statement-image img{
+    width:100%;
+  }

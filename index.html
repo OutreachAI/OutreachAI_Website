@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OutreachAI</title>
+    <meta name="description"
+        content="Discover the power of OutreachAI: the AI-driven solution for finding the help you need, while staying anonymous. Simplify your search for resources and agencies, and connect with others in similar situations.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loading_screen.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./OutreachAI_ icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./OutreachAI_ icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./OutreachAI_ icons/favicon-16x16.png">
+    <link rel="manifest" href="./OutreachAI_ icons/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.3.0/dist/themes/dark.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.3.0/dist/shoelace.js"></script>
+</head>
+
+<body>
+
+    <sl-dialog label="Register Interest" class="dialog-focus" style="color:#cb3a79; font-weight: 600;">
+        <sl-input class="email_input" autofocus placeholder="E-Mail Address"></sl-input>
+        <div class="checkbox-container">
+            <div class="checkbox-text">
+                <p>Are you a business?</p>
+            </div>
+            <div class="checkbox" style="color:#fff">
+                <sl-checkbox value="True">Yes</sl-checkbox>
+                <sl-checkbox value="False">No</sl-checkbox>
+            </div>
+        </div>
+        <div class="checkbox-container">
+            <div class="checkbox-text">
+                <p>I agree to Lauvs <a href="#">Terms & Conditions</a></p>
+            </div>
+            <div class="checkbox" style="color:#fff">
+                <sl-checkbox value="True">Yes</sl-checkbox>
+                <sl-checkbox value="False">No</sl-checkbox>
+            </div>
+        </div>
+        <sl-divider class="hidden"></sl-divider>
+        <div class="company-only">
+            <sl-input class="company_name" autofocus placeholder="Company Name"></sl-input>
+            <sl-input class="company_postcode" autofocus placeholder="Postcode"></sl-input>
+            <sl-input class="company_number" autofocus placeholder="Contact Number"></sl-input>
+            <sl-input class="company_website" autofocus placeholder="Your Website URL"></sl-input>
+            <div class="checkbox-container">
+                <div class="checkbox-text">
+                    <p>I agree to AI for conduct background checks using the provided URL</a></p>
+                </div>
+                <div class="checkbox" style="color:#fff">
+                    <sl-checkbox value="True" checked>Yes</sl-checkbox>
+                    <sl-checkbox value="False">No</sl-checkbox>
+                </div>
+            </div>
+        </div>
+        <sl-divider></sl-divider>
+        <sl-button class="close_button" slot="footer" variant="danger">Cancel</sl-button>
+        <sl-button slot="footer" variant="success">Submit</sl-button>
+
+    </sl-dialog>
+
+    <div id="loading-screen">
+        <img src="./assets/OutreachAI-Pink.png" alt="" width="250px">
+        <br>
+        <div class="spinner"></div>
+    </div>
+
+    <div id="section-1">
+        <div class="header">
+            <div class="logo">
+                <img class="header-logo" src="./assets/OutreachAI-Pink.png" alt="">
+            </div>
+            <div class="text">
+                <h2><span class="typing-text">Take the first step towards a better <span class="Derby">tomorrow, today.</span></span></h2>
+                <p>Developed in <span class="Derby">Derby</span>, for <span class="Derby">Derby</span>.</p>
+            </div>
+        </div>
+
+        <div class="countdown-section">
+            <div class="live-countdown">
+                <h1>Launch Countdown</h1>
+                <p id="countdown"></p>
+                <sl-animation name="pulse" duration="2000" play>                      
+                    <sl-button class="sign-up" pill>Register for early access</sl-button>
+                </sl-animation>
+            </div>
+        </div>
+
+        <div id="">
+            <div class="container">
+                <div class="text-container">
+                    <h1>Connect with community resources through OutreachAI</h1>
+                    <h5>OutreachAI is an innovative AI-powered platform designed to help connect you with the resources
+                        you need. Whether you're facing domestic abuse, struggling to put food on the table, or dealing
+                        with the aftermath of a death in the family, OutreachAI can help. Our advanced AI technology
+                        matches you with the right resources and agencies, ensuring that you get the help you need
+                        quickly and efficiently. And with our commitment to anonymity, you can feel safe and secure
+                        throughout the entire process.</h5>
+                </div>
+
+                <div class="image-container">
+                    <img src="./assets/plebs-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="animation-scroll-founding">
+        <sl-animation class="founding-animation" name="zoomIn" duration="2000" iterations="1" playback-rate="5">
+            <div class="founding-content">
+                <div class="founding-container">
+                    <div class="founding-container-text">
+                        <h1>Read our founding story here</h1>
+                    </div>
+                    <div class="founding-btn-container">
+                        <sl-button class="founding" href="./html/founding.html">Click Here</sl-button>
+                    </div>
+                </div>
+            </div>
+        </sl-animation>
+    </div>
+
+
+
+
+
+    <div id="section-2">
+        <div class="animation-scroll">
+            <sl-animation name="slideInLeft" duration="2000" iterations="1" playback-rate="3">
+                <div class="box">
+                    <sl-divider></sl-divider>
+                    <div class="section-2-container">
+                        <div class="section-2-text"></div>
+                        <div class="section-2-img-container">
+                            <img class="section-2-img" src="./assets/Wavy-C_Tech-05_Single-04-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="section-2-text">
+                            <h1>Looking for a supportive community?</h1>
+                            <h5>Connect with others in similar situations through OutreachAI's "pods" feature. Share
+                                experiences, advice and encouragement with others who truly understand what you're going
+                                through. Plus, you can remain anonymous while still building connections. Join a pod
+                                today and feel supported on your journey.</h5>
+                            <div class="pods-btn-container">
+                                <sl-button class="pod-btn" href="./html/404.html">Join Here</sl-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sl-animation>
+
+            <div class="animation-scroll-donation">
+                <sl-animation class="donation-animation" name="slideInRight" duration="2000" iterations="1" playback-rate="3">
+                    <div class="section-2-donation-container">
+                        <div class="content-donation">
+                            <div class="section-2-donation-text">
+                                <h1>Are you looking for a way to make a real difference in people's lives?</h1>
+                                <h5>Consider volunteering or donating to OutreachAI, a cutting-edge platform that uses AI
+                                    technology to connect individuals in need with the right resources and agencies. By
+                                    volunteering your time, you can help us improve the lives of those in need and make a
+                                    positive impact in your community. And by donating, you can help us continue to expand
+                                    our reach and provide even more support to those who need it most. Join us in our
+                                    mission to create a world where everyone has access to the help they need. Volunteer or
+                                    donate to OutreachAI today.</h5>
+                                    <div class="donation-btn-container">
+                                        <sl-button variant="default">
+                                            <sl-icon slot="prefix" name="currency-pound"></sl-icon>
+                                            Donate
+                                        </sl-button>
+                                        <sl-button variant="default">
+                                            <sl-icon slot="prefix" name="hand-thumbs-up"></sl-icon>
+                                            Volunteer
+                                        </sl-button>
+                                    </div>
+                            </div>
+                            <div class="section-2-container-img">
+                                <img class="donation-img"
+                                    src="./assets/2210.q702.010.S.m005.c12.charity-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </sl-animation>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section-3">
+        <sl-animation class="section-3-animation" name="zoomIn" duration="2000" iterations="1" playback-rate="5">
+            <div class="section-3-content">
+                <div class="section-3-container">
+                    <sl-divider></sl-divider>
+                    <div class="section-3-text">
+                        <h1>Thanks to these organizations for their services we use</h1>
+                    </div>
+                    <div class="section-3-img">
+                        <img class="credit-img-google" src="./assets/google-2015-logo-65BBD07B01-seeklogo.com.png" alt="">
+                        <img class="credit-img" src="./assets/download-removebg-preview (2).png" alt="">
+                        <img class="credit-img" src="./assets/open-ai-logo-FB5E1C8309-seeklogo.com.png" alt="">
+                        <img class="credit-img" src="./assets/wordmark.svg" alt="">
+                        <img class="credit-img" src="./assets/DCityCouncilInvert.png" alt="">
+                        <img class="credit-img" src="./assets/amazy.png" alt="">
+                        <img class="credit-img" src="./assets/derby-logo.png" alt="">
+                        <img class="credit-img-lauv" src="./assets/Lauv_Cropped.png" alt="">
+                        <img class="credit-img-linode" src="./assets/linode-icon.svg" alt="">
+                        <img class="credit-img" src="./assets/Shelter_logo.svg-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </sl-animation>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <sl-divider style="--spacing: 1%;"></sl-divider>
+        <div class="image-footer-container">
+            <img class="image-footer" src="./assets/Group 1.svg" alt="">
+        </div>
+        <div class="support-footer">
+            <sl-button variant="text" size="medium">Technical Support</sl-button>
+            <sl-button variant="text" size="medium">Privacy Policy</sl-button>
+            <sl-button variant="text" size="medium">Site Map</sl-button>
+            <sl-button variant="text" size="medium">Stats for nerds</sl-button>
+            <sl-button variant="text" size="medium">DMCA Application</sl-button>
+        </div>
+        <div class="credits">
+            <p>Developed by Joshua J</p>
+            <p>Part of <i>The Jenkinson Foundation&copy 2023 </i> Tech Stack</p>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/loadingScreen.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+/* Keep styling in order of the following tree:  */
+/* 
+    Page
+        Element
+            (n)th Element
+                (n)th Child Elements
+                    Additional (n)th elements with no ambiguous names 
+*/
+/* 
+************************************* RULES *************************************
+
+1) Do not include any propitiatory elements. This includes Fonts, img ect 
+2) Always comment authors of any .CLASS tags. #ID tags can be left uncommented providing they are global
+3) Any CSS that will not be used outside the global scope, must be defined in its own CLASS.css file
+
+
+-- Joshua J
+
+*/
+
+/* 
+
+*{
+    This tag is a global tag, and only to be used outside the BODY scope
+}
+
+body{
+    This is the main.Page.Content tag. Do not use this tag to change an elements scope. Use their respective .CLASS | #ID
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'roboto';
+    margin:0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-X: hidden;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+  } */
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding:1% 2% 0 2%;
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .header-logo {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  .header .text {
+    text-align: right;
+  }
+
+  .Derby{
+    color:#cb3a79;
+  }
+
+  .countdown-section{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-up::part(base){
+    background-color: #cb3a79;
+    color: white;
+    border-color: #cb3a79;
+  }
+
+  .live-countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .live-countdown h1{
+    color:#97E3F0;
+  }
+
+  .live-countdown p{
+    color: #cb3a79;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+
+  .checkbox-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+  }
+
+  .company-only{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+
+  .footer {
+    padding:2% 0 2% 0;
+  }
+
+  .image-footer-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .support-footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .credits{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top:1%;
+  }
+
+  .credits p{
+    margin:0;
+    font-size:14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #cb3a79;
+  }
+
+
+/* Mobile Development First */
+
+@media (max-width: 768px) {
+    /* CSS rules for mobile devices */
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-logo {
+        justify-content: center;
+        max-width: 50%;
+        height: auto;
+      }
+    .text{
+        font-size:14px;
+    }
+
+    .image-footer{
+        max-width:80%;
+    }
+  }
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container{
+    width:50%;
+}
+
+.text-container h1{
+    color: #97E3F0;
+}
+
+.text-container h5{
+    width:90%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.text p{
+    font-weight: 600;
+}
+
+
+.founding-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.founding-container-text h1{
+    color: #97E3F0;
+}
+
+.founding-btn-container sl-button::part(base){
+    background-color: #cb3a79;
+    color: white;
+    border-color: #cb3a79;
+}
+
+.founding-btn-container sl-button::part(base):hover{
+    transform: scale(1.01)
+}
+
+.section-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:12px;
+    text-align: center;
+}
+
+.section-btn{
+    color: #cb3a79;
+}
+
+.section-btn::part(base):hover,
+.section-btn::part(base):focus{
+    color: #cb3a79;
+}
+
+#section-1{
+    height:100vh;
+}
+
+#section-2{
+    height:100vh;
+    padding:2% 2% 0 2%;
+}
+
+#section-3{
+    padding:2% 2% 2% 2%;
+}
+
+
+.section-2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-text{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2-text h1{
+    color: #97E3F0;
+}
+
+.section-2-text h5{
+    width:90%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.pod-btn::part(base){
+    background-color: #cb3a79;
+    border-color: #cb3a79;
+    color: white;
+}
+
+.pod-btn::part(base):hover{
+    color: white;
+}
+
+.content-donation{
+    display: flex;
+    justify-content: center;
+}
+
+.section-2-donation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.section-2-donation-text{
+    max-width:50%;
+    line-height: 1.5;
+}
+
+.section-2-donation-text h1{
+    color: #97E3F0;
+    /* text-align: center; */
+}
+
+.section-2-donation-text h5{
+    width:90%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.section-2-container-img{
+    max-width:40%;
+}
+.donation-img{
+    max-width: 100%;
+}
+
+.donation-btn-container sl-button::part(base){
+    background-color: #cb3a79;
+    color: white;
+    border-color: #cb3a79;
+}
+
+.section-3-text{
+    padding-top:2rem;
+    text-align: center;
+}
+
+.section-3-text h1{
+    color: #97E3F0;
+}
+
+.section-3-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:1em;
+  }
+  
+  .section-3-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .credit-img{
+    width:100px;
+  }
+
+  .credit-img-google{
+    width:60px;
+  }
+
+  .credit-img-lauv{
+    width:80px;
+  }
+
+  .credit-img-linode{
+    width:60px;
+  }
